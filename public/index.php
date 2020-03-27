@@ -5,8 +5,7 @@ $tabs = array(
   'sites' => array('title' => 'Active Sites', 'iframe' => "https://app.klipfolio.com/published/ab444b80434b9a91cb5f0b8f92dacf4c/active-sites"),
   'technology' => array('title' => 'Server Technologies', 'iframe' => "https://app.klipfolio.com/published/ad17065438d34cf0d4ee688245aa7bde/server-technologies"),
   'issues' => array('title' => 'Issues tracking', 'iframe' => "https://app.klipfolio.com/published/2ef307a2fe4ddcf05826ee84ecc6bdb8/issues-tracking"),
-  'financials' => array('title' => 'Project financials', 'iframe' => "https://app.klipfolio.com/published/eb905d1fb48f5d4b876ef8e907481d26/financials"),
-);
+  );
 $tab = reset(array_keys($tabs));
 if (isset($_REQUEST['tab']) && in_array($_REQUEST['tab'], array_keys($tabs))) {
   $tab = $_REQUEST['tab'];
